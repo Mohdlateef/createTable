@@ -1,8 +1,10 @@
 let table=document.getElementById("table");
 
+let rowss=prompt("Input number of Rows")
+let colus=prompt("Input number of columns")
 
-let rows=3;
-let colum=4;
+let rows=+rowss
+let colum=+colus;
 for(let i=0;i<rows;i++)
 {
     let rows=document.createElement("tr");
@@ -11,6 +13,6 @@ for(let i=0;i<rows;i++)
     {
     let col=document.createElement("td");
     rows.appendChild(col);
-    col.innerText="abc"
+    col.innerText=`Row-${i}Column-${j}`
     }
 }
